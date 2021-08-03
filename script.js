@@ -19,9 +19,11 @@ document.addEventListener('keydown', (event) => {
 
     }
     if(keyName === 'ArrowLeft'){
-        boxLeft -= 10
+        for(let i=0; i <10; i ++){
+        boxLeft--
         box.style.left = boxLeft + "px";
         move.setAttribute('src', 'pacmanLeft.png')
+        }
     }
     if(keyName === 'ArrowRight'){
         boxLeft += 10
